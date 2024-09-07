@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="Calculator.MortgageCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock x:Name="mortgageCalculatorHeading" Text="Mortgage Calculator" TextAlignment="Center" FontSize="50" FontWeight="ExtraBlack" Padding="10" Foreground="Blue" />
+            <StackPanel Orientation="Horizontal" Width="1255" RenderTransformOrigin="0.387,0.697">
+                <TextBlock x:Name="principalBorrowTextBlock" Text="Principal Borrow $: " TextAlignment="Right" FontSize="11" FontWeight="ExtraBlack" Width="291" Margin="10" Height="30" />
+                <TextBox x:Name ="principalBorrowTextBox" TextAlignment="Left" Text="" FontSize="11" Width="197" PlaceholderText="Enter amount you wish to borrow"  Height="34"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="1270">
+                <TextBlock x:Name="yearstextBlock" Text="Years: "  TextAlignment="Right" VerticalAlignment="Center" Margin="10" FontSize="11" FontWeight="ExtraBlack" Width="286" Height="27"/>
+                <TextBox x:Name ="yearsTextBox" TextAlignment="Left" Text="" FontSize="11" Margin="10" Width="198" PlaceholderText="Enters repayment years"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="1270">
+                <TextBlock x:Name="monthsTextBlock" Text="and Months: " TextAlignment="Right" VerticalAlignment="Center" FontSize="11" FontWeight="ExtraBlack" Width="286" Margin="10" Height="29" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform SkewX="-0.531" TranslateX="-0.324"/>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <TextBox x:Name ="monthsTextBox" TextAlignment="Left" Text="" FontSize="11" Width="199" Margin="10" PlaceholderText="and months "/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="1260">
+                <TextBlock x:Name="yearlyInterestRateTextBlock" CharacterSpacing="10" TextAlignment="Right" Text="Yearly Interest Rate: " Margin="10" VerticalAlignment="Center" FontSize="11" FontWeight="ExtraBlack"  Width="281" Height="35"/>
+                <TextBox x:Name ="yearlyInterestRateTextBox" TextAlignment="Left" Text="" FontSize="11" Width="199" Margin="10" PlaceholderText="Enter yearly interest rate"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name = "monthlyInterestRateTextBlock" CharacterSpacing="10" TextAlignment="Right"  Text="Monthly  Interest Rate: " Margin="10" VerticalAlignment="Center" FontSize="11" FontWeight="ExtraBlack"  Width="292" Height="29"/>
+                <TextBox x:Name ="monthlyInterestRateTextBox" TextAlignment="Left" Text="" FontSize="11" Width="198" Margin="10" PlaceholderText="Monthly Interest Rate"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="1255" Height="58">
+                <TextBlock x:Name="monthlyRepaymentTextBlock" TextAlignment="Right" CharacterSpacing="10" Text="Monthly Repayment $: " Margin="10" VerticalAlignment="Center" FontSize="11" FontWeight="ExtraBlack"  Width="279" Height="31"/>
+                <TextBox x:Name ="monthlyRepaymentTextBox" TextAlignment="Left" Text="" FontSize="11" Width="199" Margin="10" PlaceholderText="Monthly Repayment Amount"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Button x:Name= "CalculateButton" Content= "CALCULATE" FontSize="10" Padding="10" BorderBrush="Aqua" FontWeight="ExtraBlack" Margin="185,440,0,0" Width="320" Height="75" VerticalAlignment="Top" Click="CalculateButton_Click" />
+        <Button x:Name = "ExitButton" Content="EXIT" FontSize="10" Padding="10" BorderBrush="Aqua" Margin="270,555,0,0" FontWeight="ExtraBlack" Width="160" Height="55" VerticalAlignment="Top" Click="ExitButton_Click_1" />
+
+
+
+
+
+    </Grid>
+</Page>
