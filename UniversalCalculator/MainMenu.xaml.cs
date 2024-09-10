@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -12,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Windows;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -49,6 +51,13 @@ namespace Calculator
 		{
 			CurrencyConvensionCalculator calculator = new CurrencyConvensionCalculator();
 			this.Content = calculator;
+		}
+
+		private async void TripCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			var dialogMessage = new MessageDialog("Trip calculator C# code will be developed later");
+			await dialogMessage.ShowAsync();
+
 		}
 	}
 }
