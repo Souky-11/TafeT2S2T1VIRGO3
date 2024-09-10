@@ -31,5 +31,24 @@ namespace Calculator
 		{
 
         }
-    }
+
+		private void MathsCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			//NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+			MainPage mainPage = new MainPage();
+			this.Content = mainPage;
+		}
+
+		private void MortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
+		{
+			MortgageCalculator mortgageCalculator = new MortgageCalculator();
+			this.Content = mortgageCalculator;
+		}
+
+		private void CurrencyConverterButton_Click(object sender, RoutedEventArgs e)
+		{
+			CurrencyConvensionCalculator calculator = new CurrencyConvensionCalculator();
+			this.Content = calculator;
+		}
+	}
 }

@@ -11,9 +11,9 @@
     <Grid>
         <TextBlock x:Name ="Heading" Text="Universal Calculator" FontSize="80" FontWeight="ExtraBold" Margin="10" Foreground= "Blue" SelectionChanged="Heading_SelectionChanged"></TextBlock>
         <StackPanel Orientation="Vertical" Padding="20" Margin="25,120,0,0">
-            <Button x:Name="MathsCalculatorButton" Content="Maths Calculator" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Foreground="Blue" Height="120" Width="300" Margin="10"/>
-            <Button x:Name="MortgageCalculatorButton" Content="Mortgage Calculator" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Foreground="Blue" Height="120" Width="300" Margin="10"/>
-            <Button x:Name="CurrencyConverterButton" Content="Currency Converter" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Height="120" Foreground="blue" Width="300" Margin="10"/>
+            <Button x:Name="MathsCalculatorButton" Content="Maths Calculator" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Foreground="Blue" Height="120" Width="300" Margin="10" Click="MathsCalculatorButton_Click"/>
+            <Button x:Name="MortgageCalculatorButton" Content="Mortgage Calculator" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Foreground="Blue" Height="120" Width="300" Margin="10" Click="MortgageCalculatorButton_Click"/>
+            <Button x:Name="CurrencyConverterButton" Content="Currency Converter" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Height="120" Foreground="blue" Width="300" Margin="10" Click="CurrencyConverterButton_Click"/>
             <Button x:Name="ExitButton" Content="Exit" FontSize="30" FontWeight="ExtraBold" Background="LightGray" Padding="20" BorderBrush="Magenta" Height="120" Width="300" Margin="10" Foreground="Blue"/>
         </StackPanel>
         <Image x:Name ="AbacusPicture" Source="Assets/abacus.PNG" Margin="995,42,31,546" />
