@@ -21,6 +21,11 @@ namespace Calculator
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
+	///
+
+	// Add a comment for commit the branch again
+
+
 	public sealed partial class CurrencyConvensionCalculator : Page
 	{
 		// Conversion rates
