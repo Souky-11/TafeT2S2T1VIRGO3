@@ -54,27 +54,27 @@ namespace Calculator
 		{
 			if (fromCurrency.Contains("USD"))
 			{
-				if (toCurrency.Contains("GBP")) return $"1 USD = {UsdToGbpRate:F8} GBP";
-				if (toCurrency.Contains("EUR")) return $"1 USD = {UsdToEurRate:F8} EUR";
-				if (toCurrency.Contains("INR")) return $"1 USD = {UsdToInrRate:F8} INR";
+				if (toCurrency.Contains("GBP")) return $"1 USD = {UsdToGbpRate:F2} GBP";
+				if (toCurrency.Contains("EUR")) return $"1 USD = {UsdToEurRate:F2} EUR";
+				if (toCurrency.Contains("INR")) return $"1 USD = {UsdToInrRate:F2} INR";
 			}
 			else if (fromCurrency.Contains("GBP"))
 			{
-				if (toCurrency.Contains("USD")) return $"1 GBP = {GbpToUsdRate:F8} USD";
-				if (toCurrency.Contains("EUR")) return $"1 GBP = {GbpToEurRate:F8} EUR";
-				if (toCurrency.Contains("INR")) return $"1 GBP = {GbpToInrRate:F8} INR";
+				if (toCurrency.Contains("USD")) return $"1 GBP = {GbpToUsdRate:F2} USD";
+				if (toCurrency.Contains("EUR")) return $"1 GBP = {GbpToEurRate:F2} EUR";
+				if (toCurrency.Contains("INR")) return $"1 GBP = {GbpToInrRate:F2} INR";
 			}
 			else if (fromCurrency.Contains("EUR"))
 			{
-				if (toCurrency.Contains("USD")) return $"1 EUR = {EurToUsdRate:F8} USD";
-				if (toCurrency.Contains("GBP")) return $"1 EUR = {EurToGbpRate:F8} GBP";
-				if (toCurrency.Contains("INR")) return $"1 EUR = {EurToInrRate:F8} INR";
+				if (toCurrency.Contains("USD")) return $"1 EUR = {EurToUsdRate:F2} USD";
+				if (toCurrency.Contains("GBP")) return $"1 EUR = {EurToGbpRate:F2} GBP";
+				if (toCurrency.Contains("INR")) return $"1 EUR = {EurToInrRate:F2} INR";
 			}
 			else if (fromCurrency.Contains("INR"))
 			{
-				if (toCurrency.Contains("USD")) return $"1 INR = {InrToUsdRate:F8} USD";
-				if (toCurrency.Contains("EUR")) return $"1 INR = {InrToEurRate:F8} EUR";
-				if (toCurrency.Contains("GBP")) return $"1 INR = {InrToGbpRate:F8} GBP";
+				if (toCurrency.Contains("USD")) return $"1 INR = {InrToUsdRate:F2} USD";
+				if (toCurrency.Contains("EUR")) return $"1 INR = {InrToEurRate:F2} EUR";
+				if (toCurrency.Contains("GBP")) return $"1 INR = {InrToGbpRate:F2} GBP";
 			}
 			return "Conversion rate not available.";
 		}
@@ -83,27 +83,27 @@ namespace Calculator
 		{
 			if (toCurrency.Contains("USD"))
 			{
-				if (fromCurrency.Contains("GBP")) return $"1 GBP = {GbpToUsdRate:F8} USD";
-				if (fromCurrency.Contains("EUR")) return $"1 EUR = {EurToUsdRate:F8} USD";
-				if (fromCurrency.Contains("INR")) return $"1 INR = {InrToUsdRate:F8} USD";
+				if (fromCurrency.Contains("GBP")) return $"1 GBP = {GbpToUsdRate:F2} USD";
+				if (fromCurrency.Contains("EUR")) return $"1 EUR = {EurToUsdRate:F2} USD";
+				if (fromCurrency.Contains("INR")) return $"1 INR = {InrToUsdRate:F2} USD";
 			}
 			else if (toCurrency.Contains("GBP"))
 			{
-				if (fromCurrency.Contains("USD")) return $"1 USD = {UsdToGbpRate:F8} GBP";
-				if (fromCurrency.Contains("EUR")) return $"1 EUR = {EurToGbpRate:F8} GBP";
-				if (fromCurrency.Contains("INR")) return $"1 INR = {InrToGbpRate:F8} GBP";
+				if (fromCurrency.Contains("USD")) return $"1 USD = {UsdToGbpRate:F2} GBP";
+				if (fromCurrency.Contains("EUR")) return $"1 EUR = {EurToGbpRate:F2} GBP";
+				if (fromCurrency.Contains("INR")) return $"1 INR = {InrToGbpRate:F2} GBP";
 			}
 			else if (toCurrency.Contains("EUR"))
 			{
-				if (fromCurrency.Contains("USD")) return $"1 USD = {UsdToEurRate:F8} EUR";
-				if (fromCurrency.Contains("GBP")) return $"1 GBP = {GbpToEurRate:F8} EUR";
-				if (fromCurrency.Contains("INR")) return $"1 INR = {InrToEurRate:F8} EUR";
+				if (fromCurrency.Contains("USD")) return $"1 USD = {UsdToEurRate:F2} EUR";
+				if (fromCurrency.Contains("GBP")) return $"1 GBP = {GbpToEurRate:F2} EUR";
+				if (fromCurrency.Contains("INR")) return $"1 INR = {InrToEurRate:F2} EUR";
 			}
 			else if (toCurrency.Contains("INR"))
 			{
-				if (fromCurrency.Contains("USD")) return $"1 USD = {UsdToInrRate:F8} INR";
-				if (fromCurrency.Contains("GBP")) return $"1 GBP = {GbpToInrRate:F8} INR";
-				if (fromCurrency.Contains("EUR")) return $"1 EUR = {EurToInrRate:F8} INR";
+				if (fromCurrency.Contains("USD")) return $"1 USD = {UsdToInrRate:F2} INR";
+				if (fromCurrency.Contains("GBP")) return $"1 GBP = {GbpToInrRate:F2} INR";
+				if (fromCurrency.Contains("EUR")) return $"1 EUR = {EurToInrRate:F2} INR";
 			}
 			return "Conversion rate not available.";
 		}
